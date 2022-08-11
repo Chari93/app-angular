@@ -22,4 +22,7 @@ export class AppComponent{
   onClear():void{
     this.select = ''
   }
+  onSearch():void{
+    console.log('search')
+  }
 }

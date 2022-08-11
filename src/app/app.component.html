@@ -7,9 +7,10 @@
       <!-- <p *ngIf="name">El nombre es {{name}}</p>
       <input type="text" [(ngModel)]="name"> -->
       <ul>
-         <app-ciudades *ngFor="let city of cities" (cityClicked)="onClickCity($event)" [city]="city" [select]="select"></app-ciudades>
+         <app-ciudades *ngFor="let city of cities" (cityClicked)="onCityClick($event)" [city]="city" [select]="select"></app-ciudades>
       </ul>
     </div>
+    <input type="text" (keypress)="onSearch()">
     <div class="col-md-4">
       <div *ngIf="select">
         <p>Tu ciudad es {{select}}</p>
