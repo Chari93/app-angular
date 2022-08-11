@@ -7,8 +7,8 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./cities.component.scss']
 })
 export class CitiesComponent {
-   @Input() city !: string;
-   @Input() select !: string;
+   @Input() city!: string;
+   @Input() select!: string;
    @Output() cityClicked = new EventEmitter<string>();
 //tienes que llamar al metodo, en este caso onClickCity, tú estabas llamando al Output cityClicked
    onClickCity(city:string):void{
@@ -16,8 +16,10 @@ export class CitiesComponent {
     this.cityClicked.emit(city)
   }
 }
-//git init
-// git commit -m "first commit"
-// git branch -M main
-// git remote add origin https://github.com/Chari93/app-angular.git
-// git push -u origin main
+
+//luego antes de irte tienes que hacer 
+
+//git add 
+//git commit -m  "un mensaje de los cambios"
+//git push
+//todo ello desde el directorio   app-angular/app1

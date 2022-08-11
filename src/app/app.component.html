@@ -6,7 +6,9 @@
     <div class="col-md-8">
       <!-- <p *ngIf="name">El nombre es {{name}}</p>
       <input type="text" [(ngModel)]="name"> -->
-      <!-- <app-cities *ngFor="let city of cities" (click)="onClickCity($event)" [select]="select"></app-cities> -->
+      <ul>
+         <app-ciudades *ngFor="let city of cities" (cityClicked)="onClickCity($event)" [city]="city" [select]="select"></app-ciudades>
+      </ul>
     </div>
     <div class="col-md-4">
       <div *ngIf="select">
