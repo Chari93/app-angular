@@ -15,10 +15,7 @@ export class CiudadesComponent {
     //cityClicked es el output, sólo lo puedes llamar desde otro componente que tenga el tag <app-ciudades (cityClicked)="metodo($event)"></app-ciudades>
    this.cityClicked.emit(city)
   }
-  counterRender():boolean{
-    console.log('Render ciuades')
-    return true;
-  }
+ 
 }
 //luego antes de irte tienes que hacer 
 

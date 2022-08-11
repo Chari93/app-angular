@@ -10,10 +10,5 @@ export class ButtonComponent {
   @Input() color!: string;
   @Input() label!: string;
   constructor() { }
-
-  counterRender():boolean{
-    console.log('Render button')
-    return true;
-  }
  
 }

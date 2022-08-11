@@ -1,2 +1,1 @@
-<li (click)="onClickCity(city)" [ngClass]="{'alert alert-info': city === select}">{{city}}</li>
-<p>Count :{{counterRender()}}</p>
+<li (click)="onClickCity(city)" [ngClass]="{'alert alert-info': city === select}">{{city | titlecase}}</li>

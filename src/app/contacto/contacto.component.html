@@ -1,0 +1,31 @@
+<h1>Contacto</h1>
+<form #contactForm="ngForm">
+  <div class="mb-4">
+    <label type="text" class="form-label">Nombre:</label>
+      <input type="text" class="form-control">
+      <div class="invalid-feeback">Este campo es obligatorio</div>
+  </div>
+  <div class="mb-4 form-check">
+    <label for="checkAdult" class="form-label">Tengo más de 18 años</label>
+      <input type="checkbox" class="form-check-input" id="checkAdult">
+      <div class="invalid-feeback">Este campo es obligatorio</div>
+  </div>
+  <div class="mb-4">
+    <label type="text" for="seccion" class="form-label">Sección:</label>
+      <select name="seccion" id="seccion" class="form-select form-select-sm">
+        <option selected>Estoy en la sección de</option>
+        <option value="maquetación">Maquetación</option>
+        <option value="contenidos">Contenidos</option>
+        <option value="sistemas">Sistemas</option>
+      </select>
+      <div class="invalid-feeback">Este campo es obligatorio</div>
+  </div>
+  <div class="mb-4">
+    <label type="text" class="form-label">Comentario:</label>
+      <textarea class="form-control" placeholder="Deje aquí su comentario" name="review" id="review" rows="4"></textarea>
+      <div class="invalid-feeback">Este campo es obligatorio</div>
+      <div class="gap-2 float-end">
+        <button type="submit" class="btn btn-info btn-lg">Enviar</button>
+      </div>
+  </div>
+</form>

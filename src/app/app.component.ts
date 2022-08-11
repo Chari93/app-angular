@@ -10,7 +10,7 @@ export class AppComponent{
   name = '';
   select = '';
   title = 'app1';
-  url = 'https://modogeeks.com/wp-content/uploads/2015/12/harry-potter-olly-moss-goblet-of-fire.png';
+  criteria = '';
 
   addNewCity(city:string):void{
     this.cities.push(city)
