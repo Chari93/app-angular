@@ -17,9 +17,3 @@ export class CiudadesComponent {
   }
  
 }
-//luego antes de irte tienes que hacer 
-
-//git add .
-//git commit -m  "un mensaje de los cambios"
-//git push
-//todo ello desde el directorio   app-angular/app1
